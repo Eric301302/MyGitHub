@@ -23,7 +23,13 @@ unit_test_job:
   stage: test
   image: mcr.microsoft.com/dotnet/sdk:9.0
   script:
-    - dotnet test MyAPI.sln --no-build
+    # 1. 刪除所有可能殘留的 bin 和 obj 資料夾 (Linux 指令)
+    - find . -type d -name "obj" -exec rm -rf {} +
+    - find . -type d -name "bin" -exec rm -rf {} +
+    # 2. 重新還原套件
+    - dotnet restore MyAPI.sln
+    # 3. 執行測試 (不使用 --no-build，讓它在乾淨環境下編譯)
+    - dotnet test MyAPI.sln --configuration Release
 
 # 第三關：測試過關才打包 Image
 docker_build_job:
