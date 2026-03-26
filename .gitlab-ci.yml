@@ -1,10 +1,22 @@
-image: mcr.microsoft.com/dotnet/sdk:9.0
+image: docker:24.0.5  # 使用 Docker 映像檔來執行任務
+
+services:
+  - docker:24.0.5-dind  # 啟動 Docker-in-Docker 服務
+
+variables:
+  # 定義 Image 的標籤名稱
+  IMAGE_TAG: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA
 
 stages:
   - build
 
-build_job:
+docker_build:
   stage: build
   script:
-    - dotnet restore MyAPI.sln
-    - dotnet build MyAPI.sln --configuration Release --no-restore
+    # 登入 GitLab 的私有倉庫 (使用系統自動產生的帳密)
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    # 開始打包
+    - docker build -t $IMAGE_TAG .
+    # 推送到 GitLab 倉庫
+    - docker push $IMAGE_TAG
+    - echo "Image pushed to $IMAGE_TAG"
