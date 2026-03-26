@@ -1,0 +1,970 @@
+2026-03-25 08:22:19.851 [INF] Now listening on: http://localhost:5196
+2026-03-25 08:22:19.888 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-25 08:22:19.889 [INF] Hosting environment: Development
+2026-03-25 08:22:19.889 [INF] Content root path: D:\Users\VSCode\MyPubsAPI\myapi
+2026-03-25 08:22:45.337 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 08:22:45.489 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 08:22:45.489 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 08:22:45.474 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 138.876ms
+2026-03-25 08:22:45.498 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 08:22:45.502 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 4.0721ms
+2026-03-25 08:22:45.502 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 13.5736ms
+2026-03-25 08:22:45.508 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 08:22:45.508 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 08:22:45.513 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 5.8214ms
+2026-03-25 08:22:45.514 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 25.7741ms
+2026-03-25 08:22:45.515 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 7.4613ms
+2026-03-25 08:22:45.533 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 08:22:45.538 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 16.4954ms
+2026-03-25 08:22:45.783 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 08:22:45.840 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Employee" for actions - MyAPI.Controllers.EmployeeController.Post (MyAPI), MyAPI.Controllers.EmployeeController.Create (MyAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-25 08:22:45.896 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 500 null application/json; charset=utf-8 112.6683ms
+2026-03-25 08:34:42.371 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 08:34:42.372 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 1.0216ms
+2026-03-25 08:34:42.395 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 08:34:42.395 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 0.3366ms
+2026-03-25 08:34:42.396 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 08:34:42.396 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 0.2559ms
+2026-03-25 08:34:42.396 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 08:34:42.397 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 0.2552ms
+2026-03-25 08:34:42.405 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 08:34:42.405 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 0.3132ms
+2026-03-25 08:34:42.405 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 08:34:42.406 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.2578ms
+2026-03-25 08:34:42.409 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 08:34:42.409 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.361ms
+2026-03-25 08:34:42.739 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 08:34:42.741 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Employee" for actions - MyAPI.Controllers.EmployeeController.Post (MyAPI), MyAPI.Controllers.EmployeeController.Create (MyAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-03-25 08:34:42.745 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 500 null application/json; charset=utf-8 5.3737ms
+2026-03-25 08:34:42.760 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 08:34:42.761 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.6954ms
+2026-03-25 08:34:45.087 [INF] Application is shutting down...
+2026-03-25 08:35:08.597 [INF] Now listening on: http://localhost:5196
+2026-03-25 08:35:08.637 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-25 08:35:08.637 [INF] Hosting environment: Development
+2026-03-25 08:35:08.637 [INF] Content root path: D:\Users\VSCode\MyPubsAPI\myapi
+2026-03-25 08:35:25.394 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 08:35:25.550 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 08:35:25.550 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 08:35:25.550 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 08:35:25.529 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 136.5873ms
+2026-03-25 08:35:25.560 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 08:35:25.562 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 12.1591ms
+2026-03-25 08:35:25.562 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 11.7727ms
+2026-03-25 08:35:25.562 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 08:35:25.568 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 7.8139ms
+2026-03-25 08:35:25.569 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 08:35:25.569 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 19.124ms
+2026-03-25 08:35:25.569 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.4017ms
+2026-03-25 08:35:25.571 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 8.8704ms
+2026-03-25 08:35:25.659 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 08:35:25.664 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 08:35:25.666 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 2.2904ms
+2026-03-25 08:35:25.999 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 340.2728ms
+2026-03-25 08:36:43.053 [INF] Request starting HTTP/1.1 POST http://localhost:5196/api/Employee - application/json 72
+2026-03-25 08:36:43.059 [WRN] Failed to determine the https port for redirect.
+2026-03-25 08:36:43.064 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 08:36:43.094 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyAPI.Models.EmployeeCreateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 08:36:44.659 [ERR] 新增員工資料時發生錯誤: hlin@com
+Microsoft.Data.SqlClient.SqlException (0x80131904): 無效的物件名稱 'Employees'。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.CreateEmployeeAsync(EmployeeCreateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 88
+ClientConnectionId:0fa97d8d-7e6e-4f12-88a3-906a00adf51f
+Error Number:208,State:1,Class:16
+2026-03-25 08:36:44.738 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-25 08:36:44.743 [INF] Executed action MyAPI.Controllers.EmployeeController.Create (MyAPI) in 1645.5491ms
+2026-03-25 08:36:44.743 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 08:36:44.746 [INF] Request finished HTTP/1.1 POST http://localhost:5196/api/Employee - 500 null text/plain; charset=utf-8 1693.5238ms
+2026-03-25 08:38:24.473 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 08:38:24.473 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 0.5197ms
+2026-03-25 08:38:24.509 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 08:38:24.510 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.6229ms
+2026-03-25 08:38:24.510 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 08:38:24.510 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 08:38:24.510 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 0.1598ms
+2026-03-25 08:38:24.510 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 0.2375ms
+2026-03-25 08:38:24.510 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 08:38:24.510 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 08:38:24.510 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 0.1162ms
+2026-03-25 08:38:24.510 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 0.1721ms
+2026-03-25 08:38:24.511 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 08:38:24.511 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.2811ms
+2026-03-25 08:38:24.646 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 08:38:24.655 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 08:38:24.656 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.3049ms
+2026-03-25 08:38:24.656 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.8211ms
+2026-03-25 08:49:48.438 [INF] Now listening on: http://localhost:5196
+2026-03-25 08:49:48.479 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-25 08:49:48.480 [INF] Hosting environment: Development
+2026-03-25 08:49:48.480 [INF] Content root path: D:\Users\VSCode\MyPubsAPI\myapi
+2026-03-25 08:50:02.146 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 08:50:02.361 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 216.3733ms
+2026-03-25 08:50:02.381 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 08:50:02.382 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 08:50:02.382 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 08:50:02.382 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 08:50:02.385 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 08:50:02.386 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 3.4852ms
+2026-03-25 08:50:02.386 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 08:50:02.388 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 2.0331ms
+2026-03-25 08:50:02.398 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 17.5582ms
+2026-03-25 08:50:02.398 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 15.8631ms
+2026-03-25 08:50:02.398 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 12.6013ms
+2026-03-25 08:50:02.407 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 24.754ms
+2026-03-25 08:50:02.487 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 08:50:02.492 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 08:50:02.493 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.48ms
+2026-03-25 08:50:02.825 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 338.4386ms
+2026-03-25 08:50:58.540 [INF] Request starting HTTP/1.1 POST http://localhost:5196/api/Employee - application/json 80
+2026-03-25 08:50:58.547 [WRN] Failed to determine the https port for redirect.
+2026-03-25 08:50:58.550 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 08:50:58.579 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyAPI.Models.EmployeeCreateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 08:50:58.835 [ERR] 新增員工資料時發生錯誤: T0001
+Microsoft.Data.SqlClient.SqlException (0x80131904): 無效的物件名稱 'Employees'。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.CreateEmployeeAsync(EmployeeCreateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 90
+ClientConnectionId:25315ef8-0bef-459b-a7a1-2e146ec841a9
+Error Number:208,State:1,Class:16
+2026-03-25 08:50:58.878 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-25 08:50:58.882 [INF] Executed action MyAPI.Controllers.EmployeeController.Create (MyAPI) in 299.317ms
+2026-03-25 08:50:58.884 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 08:50:58.887 [INF] Request finished HTTP/1.1 POST http://localhost:5196/api/Employee - 500 null text/plain; charset=utf-8 347.1061ms
+2026-03-25 08:54:04.416 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 08:54:04.421 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 4.991ms
+2026-03-25 08:54:04.439 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 08:54:04.439 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 0.361ms
+2026-03-25 08:54:04.439 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 08:54:04.440 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 08:54:04.440 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 0.2726ms
+2026-03-25 08:54:04.440 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 0.4197ms
+2026-03-25 08:54:04.445 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 08:54:04.446 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.4159ms
+2026-03-25 08:54:04.446 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 08:54:04.446 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 08:54:04.446 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 0.4794ms
+2026-03-25 08:54:04.446 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.3422ms
+2026-03-25 08:54:04.631 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 08:54:04.633 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.9769ms
+2026-03-25 08:54:04.646 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 08:54:04.647 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.2667ms
+2026-03-25 08:58:12.217 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 08:58:12.218 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 0.8949ms
+2026-03-25 08:58:12.233 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 08:58:12.234 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 0.5667ms
+2026-03-25 08:58:12.235 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 08:58:12.235 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 0.2877ms
+2026-03-25 08:58:12.242 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 08:58:12.242 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 08:58:12.242 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 0.2253ms
+2026-03-25 08:58:12.242 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 0.152ms
+2026-03-25 08:58:12.244 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 08:58:12.245 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.826ms
+2026-03-25 08:58:12.261 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 08:58:12.261 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.5573ms
+2026-03-25 08:58:12.410 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 08:58:12.413 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2.3993ms
+2026-03-25 08:58:12.426 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 08:58:12.427 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.2578ms
+2026-03-25 08:58:49.259 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 08:58:49.260 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 0.9468ms
+2026-03-25 08:58:49.277 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 08:58:49.277 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 08:58:49.278 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 08:58:49.278 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 0.2907ms
+2026-03-25 08:58:49.278 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 0.1722ms
+2026-03-25 08:58:49.278 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 0.4232ms
+2026-03-25 08:58:49.281 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 08:58:49.281 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 08:58:49.281 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2551ms
+2026-03-25 08:58:49.281 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 08:58:49.281 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 0.1668ms
+2026-03-25 08:58:49.282 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.2165ms
+2026-03-25 08:58:49.382 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 08:58:49.386 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.4797ms
+2026-03-25 08:58:49.391 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 08:58:49.391 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.2289ms
+2026-03-25 08:58:52.833 [INF] Application is shutting down...
+2026-03-25 09:14:39.337 [INF] Now listening on: http://localhost:5196
+2026-03-25 09:14:39.378 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-25 09:14:39.379 [INF] Hosting environment: Development
+2026-03-25 09:14:39.379 [INF] Content root path: D:\Users\VSCode\MyPubsAPI\myapi
+2026-03-25 09:14:45.012 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 09:14:45.144 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 132.9808ms
+2026-03-25 09:14:45.164 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 09:14:45.164 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 09:14:45.164 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 09:14:45.165 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 09:14:45.167 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 09:14:45.168 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 2.8002ms
+2026-03-25 09:14:45.168 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 09:14:45.170 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 2.0581ms
+2026-03-25 09:14:45.183 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 15.648ms
+2026-03-25 09:14:45.185 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 20.2252ms
+2026-03-25 09:14:45.185 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 21.1927ms
+2026-03-25 09:14:45.186 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 21.8753ms
+2026-03-25 09:14:45.324 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 09:14:45.332 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 09:14:45.333 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.39ms
+2026-03-25 09:14:45.671 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 347.039ms
+2026-03-25 09:15:26.779 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 09:15:26.780 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 0.909ms
+2026-03-25 09:15:26.803 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 09:15:26.804 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 0.8401ms
+2026-03-25 09:15:26.804 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 09:15:26.805 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 09:15:26.805 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.7579ms
+2026-03-25 09:15:26.805 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 09:15:26.807 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 0.2018ms
+2026-03-25 09:15:26.807 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 09:15:26.807 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 2.4214ms
+2026-03-25 09:15:26.808 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.4418ms
+2026-03-25 09:15:26.813 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 09:15:26.814 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 0.6917ms
+2026-03-25 09:15:26.897 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 09:15:26.903 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 09:15:26.903 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.2937ms
+2026-03-25 09:15:26.905 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.9746ms
+2026-03-25 09:16:54.491 [INF] Request starting HTTP/1.1 PUT http://localhost:5196/api/Employee - application/json 152
+2026-03-25 09:16:54.499 [WRN] Failed to determine the https port for redirect.
+2026-03-25 09:16:54.504 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Update (MyAPI)'
+2026-03-25 09:16:54.530 [INF] Route matched with {action = "Update", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(MyAPI.Models.EmployeeUpdateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 09:16:54.814 [ERR] 編輯員工資料時發生錯誤: PSA89086M
+Microsoft.Data.SqlClient.SqlException (0x80131904): UPDATE 陳述式與 FOREIGN KEY 條件約束 "FK__employee__pub_id__4BAC3F29" 衝突。衝突發生在資料庫 "pubs"，資料表 "dbo.publishers", column 'pub_id'。
+陳述式已經結束。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.UpdateEmployeeAsync(EmployeeUpdateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 125
+ClientConnectionId:044b4425-497d-4b85-b142-0a733aca6f80
+Error Number:547,State:0,Class:16
+2026-03-25 09:16:54.847 [ERR] 更新員工 PSA89086M 時發生錯誤
+Microsoft.Data.SqlClient.SqlException (0x80131904): UPDATE 陳述式與 FOREIGN KEY 條件約束 "FK__employee__pub_id__4BAC3F29" 衝突。衝突發生在資料庫 "pubs"，資料表 "dbo.publishers", column 'pub_id'。
+陳述式已經結束。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.UpdateEmployeeAsync(EmployeeUpdateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 125
+   at MyAPI.Services.EmployeeService.UpdateEmployeeAsync(EmployeeUpdateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Services\EmployeeService.cs:line 99
+   at MyAPI.Controllers.EmployeeController.Update(EmployeeUpdateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Controllers\EmployeeController.cs:line 66
+ClientConnectionId:044b4425-497d-4b85-b142-0a733aca6f80
+Error Number:547,State:0,Class:16
+2026-03-25 09:16:54.858 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-25 09:16:54.863 [INF] Executed action MyAPI.Controllers.EmployeeController.Update (MyAPI) in 329.7946ms
+2026-03-25 09:16:54.864 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Update (MyAPI)'
+2026-03-25 09:16:54.866 [INF] Request finished HTTP/1.1 PUT http://localhost:5196/api/Employee - 500 null text/plain; charset=utf-8 374.1366ms
+2026-03-25 09:17:19.981 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 09:17:19.982 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 0.6648ms
+2026-03-25 09:17:20.025 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 09:17:20.026 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.7223ms
+2026-03-25 09:17:20.026 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 09:17:20.026 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 09:17:20.026 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 0.1865ms
+2026-03-25 09:17:20.026 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 0.1975ms
+2026-03-25 09:17:20.026 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 09:17:20.026 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 09:17:20.026 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 0.0907ms
+2026-03-25 09:17:20.026 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.2252ms
+2026-03-25 09:17:20.032 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 09:17:20.032 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 0.4072ms
+2026-03-25 09:17:20.171 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 09:17:20.186 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 09:17:20.186 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.8041ms
+2026-03-25 09:17:20.186 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.1993ms
+2026-03-25 09:18:31.591 [INF] Application is shutting down...
+2026-03-25 09:19:25.675 [INF] Now listening on: http://localhost:5196
+2026-03-25 09:19:25.717 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-25 09:19:25.717 [INF] Hosting environment: Development
+2026-03-25 09:19:25.717 [INF] Content root path: D:\Users\VSCode\MyPubsAPI\myapi
+2026-03-25 09:19:45.232 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 09:19:45.365 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 134.6788ms
+2026-03-25 09:19:45.391 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 09:19:45.392 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 09:19:45.396 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 5.0544ms
+2026-03-25 09:19:45.392 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 09:19:45.392 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 09:19:45.398 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 09:19:45.398 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.5525ms
+2026-03-25 09:19:45.410 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 17.9563ms
+2026-03-25 09:19:45.410 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 09:19:45.415 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 23.2746ms
+2026-03-25 09:19:45.416 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 23.9021ms
+2026-03-25 09:19:45.416 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 6.1518ms
+2026-03-25 09:19:45.499 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 09:19:45.503 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 09:19:45.503 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.4174ms
+2026-03-25 09:19:45.843 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 343.8995ms
+2026-03-25 09:21:02.983 [INF] Request starting HTTP/1.1 PUT http://localhost:5196/api/Employee - application/json 153
+2026-03-25 09:21:02.989 [WRN] Failed to determine the https port for redirect.
+2026-03-25 09:21:02.995 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Update (MyAPI)'
+2026-03-25 09:21:03.018 [INF] Route matched with {action = "Update", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(MyAPI.Models.EmployeeUpdateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 09:21:03.297 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-25 09:21:03.311 [INF] Executed action MyAPI.Controllers.EmployeeController.Update (MyAPI) in 290.3985ms
+2026-03-25 09:21:03.312 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Update (MyAPI)'
+2026-03-25 09:21:03.315 [INF] Request finished HTTP/1.1 PUT http://localhost:5196/api/Employee - 200 null application/json; charset=utf-8 332.0283ms
+2026-03-25 09:21:41.583 [INF] Request starting HTTP/1.1 PUT http://localhost:5196/api/Employee - application/json 153
+2026-03-25 09:21:41.585 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Update (MyAPI)'
+2026-03-25 09:21:41.585 [INF] Route matched with {action = "Update", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(MyAPI.Models.EmployeeUpdateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 09:21:41.601 [ERR] 編輯員工資料時發生錯誤: PSA89086M
+Microsoft.Data.SqlClient.SqlException (0x80131904): The level for job_id:11 should be between 75 and 150.
+交易在觸發程序中結束。已中止批次。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.UpdateEmployeeAsync(EmployeeUpdateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 125
+ClientConnectionId:f09439d9-ea2c-4cb9-80bd-772909e74d73
+Error Number:50000,State:1,Class:16
+2026-03-25 09:21:41.632 [ERR] 更新員工 PSA89086M 時發生錯誤
+Microsoft.Data.SqlClient.SqlException (0x80131904): The level for job_id:11 should be between 75 and 150.
+交易在觸發程序中結束。已中止批次。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.UpdateEmployeeAsync(EmployeeUpdateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 125
+   at MyAPI.Services.EmployeeService.UpdateEmployeeAsync(EmployeeUpdateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Services\EmployeeService.cs:line 99
+   at MyAPI.Controllers.EmployeeController.Update(EmployeeUpdateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Controllers\EmployeeController.cs:line 66
+ClientConnectionId:f09439d9-ea2c-4cb9-80bd-772909e74d73
+Error Number:50000,State:1,Class:16
+2026-03-25 09:21:41.635 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-25 09:21:41.635 [INF] Executed action MyAPI.Controllers.EmployeeController.Update (MyAPI) in 49.5283ms
+2026-03-25 09:21:41.636 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Update (MyAPI)'
+2026-03-25 09:21:41.637 [INF] Request finished HTTP/1.1 PUT http://localhost:5196/api/Employee - 500 null text/plain; charset=utf-8 53.4349ms
+2026-03-25 09:22:10.470 [INF] Request starting HTTP/1.1 PUT http://localhost:5196/api/Employee - application/json 153
+2026-03-25 09:22:10.471 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Update (MyAPI)'
+2026-03-25 09:22:10.471 [INF] Route matched with {action = "Update", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(MyAPI.Models.EmployeeUpdateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 09:22:10.477 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-25 09:22:10.478 [INF] Executed action MyAPI.Controllers.EmployeeController.Update (MyAPI) in 6.3142ms
+2026-03-25 09:22:10.478 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Update (MyAPI)'
+2026-03-25 09:22:10.478 [INF] Request finished HTTP/1.1 PUT http://localhost:5196/api/Employee - 200 null application/json; charset=utf-8 7.5967ms
+2026-03-25 09:31:34.363 [INF] Application is shutting down...
+2026-03-25 09:32:29.039 [INF] Now listening on: http://localhost:5196
+2026-03-25 09:32:29.079 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-25 09:32:29.079 [INF] Hosting environment: Development
+2026-03-25 09:32:29.079 [INF] Content root path: D:\Users\VSCode\MyPubsAPI\myapi
+2026-03-25 09:32:36.409 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 09:32:36.538 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 130.4527ms
+2026-03-25 09:32:36.557 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 09:32:36.558 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 09:32:36.558 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 09:32:36.561 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 09:32:36.558 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 09:32:36.562 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 5.7777ms
+2026-03-25 09:32:36.563 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 09:32:36.564 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.5902ms
+2026-03-25 09:32:36.573 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 15.3113ms
+2026-03-25 09:32:36.573 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 15.3137ms
+2026-03-25 09:32:36.575 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 13.2638ms
+2026-03-25 09:32:36.581 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 22.884ms
+2026-03-25 09:32:36.719 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 09:32:36.730 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 09:32:36.731 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.438ms
+2026-03-25 09:32:37.074 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 355.0233ms
+2026-03-25 09:33:48.793 [INF] Request starting HTTP/1.1 POST http://localhost:5196/api/Employee - application/json 152
+2026-03-25 09:33:48.798 [WRN] Failed to determine the https port for redirect.
+2026-03-25 09:33:48.803 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:33:48.833 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyAPI.Models.EmployeeCreateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 09:33:49.098 [ERR] 新增員工資料時發生錯誤: TEST001
+Microsoft.Data.SqlClient.SqlException (0x80131904): 無法插入 NULL 值到資料行 'lname'，資料表 'pubs.dbo.employee'; 資料行不得有 Null。INSERT 失敗。
+陳述式已經結束。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.CreateEmployeeAsync(EmployeeCreateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 97
+ClientConnectionId:55c11299-e5ee-4eeb-ad2e-d0b57743eab0
+Error Number:515,State:2,Class:16
+2026-03-25 09:33:49.139 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-25 09:33:49.145 [INF] Executed action MyAPI.Controllers.EmployeeController.Create (MyAPI) in 307.1452ms
+2026-03-25 09:33:49.146 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:33:49.148 [INF] Request finished HTTP/1.1 POST http://localhost:5196/api/Employee - 500 null text/plain; charset=utf-8 355.7712ms
+2026-03-25 09:34:41.366 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 09:34:41.366 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 0.5406ms
+2026-03-25 09:34:41.392 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 09:34:41.395 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 3.61ms
+2026-03-25 09:34:41.397 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 09:34:41.398 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 1.0915ms
+2026-03-25 09:34:41.399 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 09:34:41.400 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.9715ms
+2026-03-25 09:34:41.400 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 09:34:41.400 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 0.3024ms
+2026-03-25 09:34:41.400 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 09:34:41.400 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 0.1579ms
+2026-03-25 09:34:41.392 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 09:34:41.401 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 9.3369ms
+2026-03-25 09:34:41.549 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 09:34:41.551 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 09:34:41.551 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.244ms
+2026-03-25 09:34:41.553 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.0603ms
+2026-03-25 09:34:49.107 [INF] Application is shutting down...
+2026-03-25 09:36:43.653 [INF] Now listening on: http://localhost:5196
+2026-03-25 09:36:43.698 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-25 09:36:43.698 [INF] Hosting environment: Development
+2026-03-25 09:36:43.698 [INF] Content root path: D:\Users\VSCode\MyPubsAPI\myapi
+2026-03-25 09:36:54.131 [INF] Request starting HTTP/1.1 GET http://localhost:5196/ - null null
+2026-03-25 09:36:54.231 [INF] Request finished HTTP/1.1 GET http://localhost:5196/ - 301 0 null 211.0237ms
+2026-03-25 09:36:54.252 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 09:36:54.408 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 200 null text/html;charset=utf-8 155.6166ms
+2026-03-25 09:36:54.408 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 09:36:54.408 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 09:36:54.409 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 09:36:54.421 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 09:36:54.421 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 09:36:54.421 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 200 null application/javascript;charset=utf-8 0.8102ms
+2026-03-25 09:36:54.422 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 09:36:54.423 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 1.8139ms
+2026-03-25 09:36:54.430 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 200 26388 text/css 21.935ms
+2026-03-25 09:36:54.432 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 200 152 text/css 23.2476ms
+2026-03-25 09:36:54.452 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 200 76581 text/javascript 43.0999ms
+2026-03-25 09:36:54.454 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 200 417806 text/javascript 32.4234ms
+2026-03-25 09:36:54.714 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 09:36:54.740 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 09:36:54.741 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 200 628 image/png 0.9659ms
+2026-03-25 09:36:55.099 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 385.1981ms
+2026-03-25 09:37:53.517 [INF] Request starting HTTP/1.1 POST http://localhost:5196/api/Employee - application/json 173
+2026-03-25 09:37:53.523 [WRN] Failed to determine the https port for redirect.
+2026-03-25 09:37:53.529 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:37:53.553 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyAPI.Models.EmployeeCreateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 09:37:53.822 [ERR] 新增員工資料時發生錯誤: TEST001
+Microsoft.Data.SqlClient.SqlException (0x80131904): INSERT 陳述式中的資料行數量大於 VALUES 子句中所指定的值。在 VALUES 子句中值的數目必須和 INSERT 陳述式中所指定的資料行數量相符。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.CreateEmployeeAsync(EmployeeCreateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 98
+ClientConnectionId:9d68edfd-3b7f-4fba-8641-c361da49ba7a
+Error Number:109,State:1,Class:15
+2026-03-25 09:37:53.869 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-25 09:37:53.873 [INF] Executed action MyAPI.Controllers.EmployeeController.Create (MyAPI) in 316.3951ms
+2026-03-25 09:37:53.874 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:37:53.874 [INF] Request finished HTTP/1.1 POST http://localhost:5196/api/Employee - 500 null text/plain; charset=utf-8 356.4536ms
+2026-03-25 09:39:48.078 [INF] Request starting HTTP/1.1 POST http://localhost:5196/api/Employee - application/json 169
+2026-03-25 09:39:48.079 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:39:48.079 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyAPI.Models.EmployeeCreateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 09:39:48.088 [ERR] 新增員工資料時發生錯誤: TEST001
+Microsoft.Data.SqlClient.SqlException (0x80131904): INSERT 陳述式中的資料行數量大於 VALUES 子句中所指定的值。在 VALUES 子句中值的數目必須和 INSERT 陳述式中所指定的資料行數量相符。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.CreateEmployeeAsync(EmployeeCreateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 98
+ClientConnectionId:9d68edfd-3b7f-4fba-8641-c361da49ba7a
+Error Number:109,State:1,Class:15
+2026-03-25 09:39:48.090 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-25 09:39:48.091 [INF] Executed action MyAPI.Controllers.EmployeeController.Create (MyAPI) in 11.4092ms
+2026-03-25 09:39:48.091 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:39:48.091 [INF] Request finished HTTP/1.1 POST http://localhost:5196/api/Employee - 500 null text/plain; charset=utf-8 12.856ms
+2026-03-25 09:40:39.963 [INF] Application is shutting down...
+2026-03-25 09:41:04.553 [INF] Now listening on: http://localhost:5196
+2026-03-25 09:41:04.590 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-25 09:41:04.591 [INF] Hosting environment: Development
+2026-03-25 09:41:04.591 [INF] Content root path: D:\Users\VSCode\MyPubsAPI\myapi
+2026-03-25 09:41:18.323 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 09:41:18.453 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 130.9356ms
+2026-03-25 09:41:18.473 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 09:41:18.474 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 09:41:18.474 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 09:41:18.474 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 09:41:18.478 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 09:41:18.479 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 4.4466ms
+2026-03-25 09:41:18.479 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 09:41:18.480 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.7177ms
+2026-03-25 09:41:18.496 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 17.9451ms
+2026-03-25 09:41:18.496 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 21.6765ms
+2026-03-25 09:41:18.496 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 23.4128ms
+2026-03-25 09:41:18.497 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 22.1378ms
+2026-03-25 09:41:18.635 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 09:41:18.646 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 09:41:18.646 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.6495ms
+2026-03-25 09:41:18.975 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 340.6783ms
+2026-03-25 09:42:19.726 [INF] Request starting HTTP/1.1 POST http://localhost:5196/api/Employee - application/json 170
+2026-03-25 09:42:19.734 [WRN] Failed to determine the https port for redirect.
+2026-03-25 09:42:19.738 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:42:19.767 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyAPI.Models.EmployeeCreateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 09:42:20.050 [ERR] 新增員工資料時發生錯誤: TEST001
+Microsoft.Data.SqlClient.SqlException (0x80131904): INSERT 陳述式與 CHECK 條件約束 "CK_emp_id" 衝突。衝突發生在資料庫 "pubs"，資料表 "dbo.employee", column 'emp_id'。
+陳述式已經結束。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.CreateEmployeeAsync(EmployeeCreateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 98
+ClientConnectionId:143bd4bf-e2d8-4739-b1d7-b06f617b3f0a
+Error Number:547,State:0,Class:16
+2026-03-25 09:42:20.092 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-25 09:42:20.098 [INF] Executed action MyAPI.Controllers.EmployeeController.Create (MyAPI) in 326.2977ms
+2026-03-25 09:42:20.099 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:42:20.101 [INF] Request finished HTTP/1.1 POST http://localhost:5196/api/Employee - 500 null text/plain; charset=utf-8 375.2242ms
+2026-03-25 09:42:48.908 [INF] Request starting HTTP/1.1 POST http://localhost:5196/api/Employee - application/json 170
+2026-03-25 09:42:48.908 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:42:48.909 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyAPI.Models.EmployeeCreateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 09:42:48.922 [ERR] 新增員工資料時發生錯誤: TEST002
+Microsoft.Data.SqlClient.SqlException (0x80131904): INSERT 陳述式與 CHECK 條件約束 "CK_emp_id" 衝突。衝突發生在資料庫 "pubs"，資料表 "dbo.employee", column 'emp_id'。
+陳述式已經結束。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.CreateEmployeeAsync(EmployeeCreateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 98
+ClientConnectionId:143bd4bf-e2d8-4739-b1d7-b06f617b3f0a
+Error Number:547,State:0,Class:16
+2026-03-25 09:42:48.929 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-25 09:42:48.929 [INF] Executed action MyAPI.Controllers.EmployeeController.Create (MyAPI) in 19.8484ms
+2026-03-25 09:42:48.929 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:42:48.929 [INF] Request finished HTTP/1.1 POST http://localhost:5196/api/Employee - 500 null text/plain; charset=utf-8 21.8254ms
+2026-03-25 09:44:48.793 [INF] Request starting HTTP/1.1 POST http://localhost:5196/api/Employee - application/json 172
+2026-03-25 09:44:48.793 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:44:48.795 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyAPI.Models.EmployeeCreateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 09:44:48.801 [ERR] 新增員工資料時發生錯誤: TEST00001
+Microsoft.Data.SqlClient.SqlException (0x80131904): INSERT 陳述式與 CHECK 條件約束 "CK_emp_id" 衝突。衝突發生在資料庫 "pubs"，資料表 "dbo.employee", column 'emp_id'。
+陳述式已經結束。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.CreateEmployeeAsync(EmployeeCreateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 98
+ClientConnectionId:143bd4bf-e2d8-4739-b1d7-b06f617b3f0a
+Error Number:547,State:0,Class:16
+2026-03-25 09:44:48.808 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-25 09:44:48.808 [INF] Executed action MyAPI.Controllers.EmployeeController.Create (MyAPI) in 13.6441ms
+2026-03-25 09:44:48.809 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:44:48.810 [INF] Request finished HTTP/1.1 POST http://localhost:5196/api/Employee - 500 null text/plain; charset=utf-8 17.3011ms
+2026-03-25 09:49:57.807 [INF] Request starting HTTP/1.1 POST http://localhost:5196/api/Employee - application/json 172
+2026-03-25 09:49:57.807 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:49:57.808 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyAPI.Models.EmployeeCreateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 09:49:57.816 [ERR] 新增員工資料時發生錯誤: PSP68661E
+Microsoft.Data.SqlClient.SqlException (0x80131904): INSERT 陳述式與 CHECK 條件約束 "CK_emp_id" 衝突。衝突發生在資料庫 "pubs"，資料表 "dbo.employee", column 'emp_id'。
+陳述式已經結束。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.CreateEmployeeAsync(EmployeeCreateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 98
+ClientConnectionId:7848c96c-e278-4986-bb92-b0da0566060a
+Error Number:547,State:0,Class:16
+2026-03-25 09:49:57.818 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-25 09:49:57.821 [INF] Executed action MyAPI.Controllers.EmployeeController.Create (MyAPI) in 13.358ms
+2026-03-25 09:49:57.821 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:49:57.822 [INF] Request finished HTTP/1.1 POST http://localhost:5196/api/Employee - 500 null text/plain; charset=utf-8 14.8213ms
+2026-03-25 09:56:31.138 [INF] Application is shutting down...
+2026-03-25 09:57:01.655 [INF] Now listening on: http://localhost:5196
+2026-03-25 09:57:01.693 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-25 09:57:01.694 [INF] Hosting environment: Development
+2026-03-25 09:57:01.694 [INF] Content root path: D:\Users\VSCode\MyPubsAPI\myapi
+2026-03-25 09:57:16.287 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 09:57:16.436 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 09:57:16.436 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 09:57:16.437 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 09:57:16.437 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 09:57:16.416 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 130.6042ms
+2026-03-25 09:57:16.442 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 09:57:16.445 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 2.4046ms
+2026-03-25 09:57:16.445 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 09:57:16.446 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.4506ms
+2026-03-25 09:57:16.449 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 12.8597ms
+2026-03-25 09:57:16.449 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 13.1208ms
+2026-03-25 09:57:16.449 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 12.2099ms
+2026-03-25 09:57:16.456 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 18.8339ms
+2026-03-25 09:57:16.584 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 09:57:16.590 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 09:57:16.590 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.471ms
+2026-03-25 09:57:16.910 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 325.9059ms
+2026-03-25 09:58:44.064 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 09:58:44.065 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 1.6446ms
+2026-03-25 09:58:44.083 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 09:58:44.084 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 0.4961ms
+2026-03-25 09:58:44.088 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 09:58:44.088 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 09:58:44.088 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 0.3919ms
+2026-03-25 09:58:44.088 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 0.4155ms
+2026-03-25 09:58:44.089 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 09:58:44.089 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.4686ms
+2026-03-25 09:58:44.090 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 09:58:44.090 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 1.3493ms
+2026-03-25 09:58:44.096 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 09:58:44.096 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.702ms
+2026-03-25 09:58:44.173 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 09:58:44.178 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 09:58:44.179 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.3044ms
+2026-03-25 09:58:44.183 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.2013ms
+2026-03-25 09:59:56.407 [INF] Request starting HTTP/1.1 POST http://localhost:5196/api/Employee - application/json 172
+2026-03-25 09:59:56.413 [WRN] Failed to determine the https port for redirect.
+2026-03-25 09:59:56.418 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:59:56.443 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyAPI.Models.EmployeeCreateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 09:59:56.711 [ERR] 新增員工資料時發生錯誤: ABC10001M
+Microsoft.Data.SqlClient.SqlException (0x80131904): INSERT 陳述式與 FOREIGN KEY 條件約束 "FK__employee__pub_id__4BAC3F29" 衝突。衝突發生在資料庫 "pubs"，資料表 "dbo.publishers", column 'pub_id'。
+陳述式已經結束。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.CreateEmployeeAsync(EmployeeCreateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 98
+ClientConnectionId:8576e8ac-93be-4454-bb6d-9d6cd168376f
+Error Number:547,State:0,Class:16
+2026-03-25 09:59:56.755 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-25 09:59:56.759 [INF] Executed action MyAPI.Controllers.EmployeeController.Create (MyAPI) in 312.8651ms
+2026-03-25 09:59:56.760 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 09:59:56.762 [INF] Request finished HTTP/1.1 POST http://localhost:5196/api/Employee - 500 null text/plain; charset=utf-8 355.21ms
+2026-03-25 10:03:41.307 [INF] Request starting HTTP/1.1 POST http://localhost:5196/api/Employee - application/json 173
+2026-03-25 10:03:41.308 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 10:03:41.308 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyAPI.Models.EmployeeCreateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 10:03:41.350 [ERR] 新增員工資料時發生錯誤: ABC10001M
+Microsoft.Data.SqlClient.SqlException (0x80131904): The level for job_id:11 should be between 75 and 150.
+交易在觸發程序中結束。已中止批次。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.CreateEmployeeAsync(EmployeeCreateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 98
+ClientConnectionId:8576e8ac-93be-4454-bb6d-9d6cd168376f
+Error Number:50000,State:1,Class:16
+2026-03-25 10:03:41.353 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-25 10:03:41.353 [INF] Executed action MyAPI.Controllers.EmployeeController.Create (MyAPI) in 15.4562ms
+2026-03-25 10:03:41.354 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 10:03:41.354 [INF] Request finished HTTP/1.1 POST http://localhost:5196/api/Employee - 500 null text/plain; charset=utf-8 46.6896ms
+2026-03-25 10:04:38.409 [INF] Request starting HTTP/1.1 POST http://localhost:5196/api/Employee - application/json 173
+2026-03-25 10:04:38.409 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 10:04:38.409 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyAPI.Models.EmployeeCreateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 10:04:38.414 [ERR] 新增員工資料時發生錯誤: ABC10001M
+Microsoft.Data.SqlClient.SqlException (0x80131904): INSERT 陳述式與 FOREIGN KEY 條件約束 "FK__employee__job_id__48CFD27E" 衝突。衝突發生在資料庫 "pubs"，資料表 "dbo.jobs", column 'job_id'。
+陳述式已經結束。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__251_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at MyAPI.Helpers.DbHelper.ExecuteNonQueryAsync(String sql, List`1 parameters) in D:\Users\VSCode\MyPubsAPI\myapi\Helpers\DbHelper.cs:line 82
+   at MyAPI.Repositories.EmployeeRepository.CreateEmployeeAsync(EmployeeCreateDto dto) in D:\Users\VSCode\MyPubsAPI\myapi\Repositories\EmployeeRepository.cs:line 98
+ClientConnectionId:8576e8ac-93be-4454-bb6d-9d6cd168376f
+Error Number:547,State:0,Class:16
+2026-03-25 10:04:38.417 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-25 10:04:38.418 [INF] Executed action MyAPI.Controllers.EmployeeController.Create (MyAPI) in 8.2337ms
+2026-03-25 10:04:38.418 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 10:04:38.418 [INF] Request finished HTTP/1.1 POST http://localhost:5196/api/Employee - 500 null text/plain; charset=utf-8 9.02ms
+2026-03-25 10:06:39.088 [INF] Request starting HTTP/1.1 POST http://localhost:5196/api/Employee - application/json 173
+2026-03-25 10:06:39.088 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 10:06:39.088 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MyAPI.Models.EmployeeCreateDto) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 10:06:39.094 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-25 10:06:39.122 [INF] Executed action MyAPI.Controllers.EmployeeController.Create (MyAPI) in 33.3369ms
+2026-03-25 10:06:39.122 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Create (MyAPI)'
+2026-03-25 10:06:39.122 [INF] Request finished HTTP/1.1 POST http://localhost:5196/api/Employee - 200 null application/json; charset=utf-8 34.3904ms
+2026-03-25 10:26:25.428 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 10:26:25.429 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 0.6775ms
+2026-03-25 10:26:25.492 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 10:26:25.492 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 0.2496ms
+2026-03-25 10:26:25.493 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 10:26:25.493 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 0.2279ms
+2026-03-25 10:26:25.493 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 10:26:25.493 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 0.1113ms
+2026-03-25 10:26:25.581 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 10:26:25.581 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2103ms
+2026-03-25 10:26:25.584 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 10:26:25.584 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 0.2049ms
+2026-03-25 10:26:25.584 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 10:26:25.585 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.2151ms
+2026-03-25 10:26:25.715 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 10:26:25.718 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.109ms
+2026-03-25 10:26:25.725 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 10:26:25.725 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.2398ms
+2026-03-25 10:26:30.762 [INF] Application is shutting down...
+2026-03-25 10:35:18.532 [INF] Now listening on: http://localhost:5196
+2026-03-25 10:35:18.573 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-25 10:35:18.573 [INF] Hosting environment: Development
+2026-03-25 10:35:18.573 [INF] Content root path: D:\Users\VSCode\MyPubsAPI\myapi
+2026-03-25 10:35:40.447 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 10:35:40.576 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 130.3701ms
+2026-03-25 10:35:40.596 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 10:35:40.597 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 10:35:40.598 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 10:35:40.598 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 10:35:40.600 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 10:35:40.601 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 3.1614ms
+2026-03-25 10:35:40.601 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 10:35:40.603 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 2.1148ms
+2026-03-25 10:35:40.612 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 16.3453ms
+2026-03-25 10:35:40.613 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 15.889ms
+2026-03-25 10:35:40.620 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 19.5857ms
+2026-03-25 10:35:40.621 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 22.8304ms
+2026-03-25 10:35:40.759 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 10:35:40.767 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 10:35:40.768 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.3923ms
+2026-03-25 10:35:41.091 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 332.0094ms
+2026-03-25 10:36:43.743 [INF] Request starting HTTP/1.1 DELETE http://localhost:5196/api/Employee/ABC10001M - null null
+2026-03-25 10:36:43.749 [WRN] Failed to determine the https port for redirect.
+2026-03-25 10:36:43.752 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Delete (MyAPI)'
+2026-03-25 10:36:43.780 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.String) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 10:36:44.767 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-25 10:36:44.808 [INF] Executed action MyAPI.Controllers.EmployeeController.Delete (MyAPI) in 1023.2262ms
+2026-03-25 10:36:44.809 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Delete (MyAPI)'
+2026-03-25 10:36:44.811 [INF] Request finished HTTP/1.1 DELETE http://localhost:5196/api/Employee/ABC10001M - 200 null application/json; charset=utf-8 1068.1137ms
+2026-03-25 10:38:27.566 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 10:38:27.567 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 1.1176ms
+2026-03-25 10:38:27.596 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 10:38:27.596 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.6793ms
+2026-03-25 10:38:27.598 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 10:38:27.598 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 0.5424ms
+2026-03-25 10:38:27.599 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 10:38:27.600 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 0.4153ms
+2026-03-25 10:38:27.600 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 10:38:27.600 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 10:38:27.600 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 0.2141ms
+2026-03-25 10:38:27.600 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 10:38:27.600 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.3229ms
+2026-03-25 10:38:27.600 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 0.8125ms
+2026-03-25 10:38:27.696 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 10:38:27.697 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 10:38:27.697 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.4189ms
+2026-03-25 10:38:27.701 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.7751ms
+2026-03-25 10:38:32.132 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 10:38:32.132 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 0.4181ms
+2026-03-25 10:38:32.158 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 10:38:32.158 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 0.3237ms
+2026-03-25 10:38:32.160 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 10:38:32.160 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 10:38:32.160 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.1917ms
+2026-03-25 10:38:32.160 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 0.2834ms
+2026-03-25 10:38:32.160 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 10:38:32.161 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 0.1814ms
+2026-03-25 10:38:32.161 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 10:38:32.161 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 10:38:32.161 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 0.2174ms
+2026-03-25 10:38:32.161 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.2624ms
+2026-03-25 10:38:32.233 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 10:38:32.242 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 10:38:32.242 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.2558ms
+2026-03-25 10:38:32.243 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.408ms
+2026-03-25 10:40:25.063 [INF] Request starting HTTP/1.1 GET http://localhost:5196/api/Employee/PSA89086M - null null
+2026-03-25 10:40:25.064 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.Get (MyAPI)'
+2026-03-25 10:40:25.066 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 10:40:25.075 [INF] 10:40:25: 正在查詢員工 ID: PSA89086M
+2026-03-25 10:40:25.176 [INF] Executing OkObjectResult, writing value of type 'MyAPI.Models.Employee'.
+2026-03-25 10:40:25.191 [INF] Executed action MyAPI.Controllers.EmployeeController.Get (MyAPI) in 124.7091ms
+2026-03-25 10:40:25.191 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.Get (MyAPI)'
+2026-03-25 10:40:25.191 [INF] Request finished HTTP/1.1 GET http://localhost:5196/api/Employee/PSA89086M - 200 null application/json; charset=utf-8 127.901ms
+2026-03-25 14:19:24.594 [INF] Now listening on: http://localhost:5196
+2026-03-25 14:19:24.634 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-25 14:19:24.634 [INF] Hosting environment: Development
+2026-03-25 14:19:24.634 [INF] Content root path: D:\Users\VSCode\MyPubsAPI\myapi
+2026-03-25 14:19:30.457 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 14:19:30.673 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 14:19:30.673 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 14:19:30.673 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 14:19:30.673 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 14:19:30.653 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 197.3989ms
+2026-03-25 14:19:30.688 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 14:19:30.688 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 15.6734ms
+2026-03-25 14:19:30.690 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 17.1554ms
+2026-03-25 14:19:30.690 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 14:19:30.690 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 0.3469ms
+2026-03-25 14:19:30.690 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 1.8685ms
+2026-03-25 14:19:30.691 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 18.3797ms
+2026-03-25 14:19:30.691 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 18.6684ms
+2026-03-25 14:19:31.012 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 14:19:31.373 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 361.3749ms
+2026-03-25 14:19:56.121 [INF] Application is shutting down...
+2026-03-25 14:20:19.780 [INF] Now listening on: http://localhost:5196
+2026-03-25 14:20:19.820 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-25 14:20:19.821 [INF] Hosting environment: Development
+2026-03-25 14:20:19.821 [INF] Content root path: D:\Users\VSCode\MyPubsAPI\myapi
+2026-03-25 14:20:28.094 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.html - null null
+2026-03-25 14:20:28.244 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - null null
+2026-03-25 14:20:28.244 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui.css - null null
+2026-03-25 14:20:28.244 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.css - null null
+2026-03-25 14:20:28.244 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - null null
+2026-03-25 14:20:28.227 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.html - 304 null null 135.6731ms
+2026-03-25 14:20:28.259 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-standalone-preset.js - 304 null null 15.2003ms
+2026-03-25 14:20:28.259 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.css - 304 null null 15.127ms
+2026-03-25 14:20:28.259 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui.css - 304 null null 15.7751ms
+2026-03-25 14:20:28.260 [INF] Request starting HTTP/1.1 GET http://localhost:5196/index.js - null null
+2026-03-25 14:20:28.260 [INF] Request starting HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 14:20:28.261 [INF] Request finished HTTP/1.1 GET http://localhost:5196/index.js - 304 null null 1.073ms
+2026-03-25 14:20:28.263 [INF] Request finished HTTP/1.1 GET http://localhost:5196/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 2.3578ms
+2026-03-25 14:20:28.267 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger-ui-bundle.js - 304 null null 23.1601ms
+2026-03-25 14:20:28.351 [INF] Request starting HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - null null
+2026-03-25 14:20:28.356 [INF] Request starting HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - null null
+2026-03-25 14:20:28.357 [INF] Request finished HTTP/1.1 GET http://localhost:5196/favicon-32x32.png - 304 null null 0.3818ms
+2026-03-25 14:20:28.687 [INF] Request finished HTTP/1.1 GET http://localhost:5196/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 336.2527ms
+2026-03-25 14:20:51.896 [INF] Request starting HTTP/1.1 GET http://localhost:5196/api/Employee - null null
+2026-03-25 14:20:51.901 [WRN] Failed to determine the https port for redirect.
+2026-03-25 14:20:51.904 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.GetAll (MyAPI)'
+2026-03-25 14:20:51.932 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(MyAPI.Models.PaginationFilter) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 14:20:52.750 [INF] Executing OkObjectResult, writing value of type 'MyAPI.Models.PagedResult`1[[MyAPI.Models.Employee, MyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 14:20:52.805 [INF] Executed action MyAPI.Controllers.EmployeeController.GetAll (MyAPI) in 870.4054ms
+2026-03-25 14:20:52.806 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.GetAll (MyAPI)'
+2026-03-25 14:20:52.808 [INF] Request finished HTTP/1.1 GET http://localhost:5196/api/Employee - 200 null application/json; charset=utf-8 912.0703ms
+2026-03-25 14:22:36.280 [INF] Request starting HTTP/1.1 GET http://localhost:5196/api/Employee?PageNumber=2&PageSize=10 - null null
+2026-03-25 14:22:36.281 [INF] Executing endpoint 'MyAPI.Controllers.EmployeeController.GetAll (MyAPI)'
+2026-03-25 14:22:36.281 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(MyAPI.Models.PaginationFilter) on controller MyAPI.Controllers.EmployeeController (MyAPI).
+2026-03-25 14:22:36.293 [INF] Executing OkObjectResult, writing value of type 'MyAPI.Models.PagedResult`1[[MyAPI.Models.Employee, MyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-25 14:22:36.294 [INF] Executed action MyAPI.Controllers.EmployeeController.GetAll (MyAPI) in 12.6175ms
+2026-03-25 14:22:36.294 [INF] Executed endpoint 'MyAPI.Controllers.EmployeeController.GetAll (MyAPI)'
+2026-03-25 14:22:36.295 [INF] Request finished HTTP/1.1 GET http://localhost:5196/api/Employee?PageNumber=2&PageSize=10 - 200 null application/json; charset=utf-8 15.0705ms
+2026-03-25 14:23:11.287 [INF] Application is shutting down...
