@@ -6,5 +6,5 @@ stages:
 build_job:
   stage: build
   script:
-    - dotnet restore
-    - dotnet build --configuration Release --no-restore
+    - dotnet restore MyAPI.sln
+    - dotnet build MyAPI.sln --configuration Release --no-restore
