@@ -6,19 +6,24 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MyAPI.Models;
-using MyAPI.Services;
+
+using Microsoft.AspNetCore.Authorization;
+using MyAPI.Services.Interfaces;
 
 
-namespace MyAPI.Controllers
+namespace MyAPI.Controllers.Public
 {
+    //[Authorize] // 加上這個標籤，現在這整個 Controller 都被 JWT 保護了
     [ApiController] // 💡 增加這個，會自動幫您處理 [FromBody] 驗證
     [Route("api/[controller]")] // 💡 建議加上 api/ 前綴，這是業界標準
     public class EmployeeController : ControllerBase // 💡 改為繼承 ControllerBase
     {
+        private readonly IConfiguration  _config;
         private readonly IEmployeeService _service;
         private readonly ILogger<EmployeeController> _logger;
-
-        public EmployeeController(ILogger<EmployeeController> logger, IEmployeeService service)
+         
+        
+        public EmployeeController(ILogger<EmployeeController> logger, IEmployeeService service, IConfiguration config   )
         {
             _logger = logger;
             _service = service;
@@ -27,6 +32,7 @@ namespace MyAPI.Controllers
         // 💡 移除 Index() 和 Error()，因為 API 不需要回傳 HTML 網頁
 
         // GET api/employee/A12345678
+        [Authorize]
         [HttpGet("{id}")]
         public IActionResult Get(string id)
         {
@@ -36,7 +42,8 @@ namespace MyAPI.Controllers
         }
 
 
-        //OST api/employee
+        // POST api/employee
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> Create(EmployeeCreateDto dto)
         {
@@ -55,6 +62,7 @@ namespace MyAPI.Controllers
                 return StatusCode(500, $"伺服器內部錯誤: {ex.Message}");
             }
         }
+        [Authorize]
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] EmployeeUpdateDto dto)
         {
@@ -76,6 +84,7 @@ namespace MyAPI.Controllers
         }
 
         // DELETE api/employee/PMA42628M
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
         {
@@ -99,13 +108,24 @@ namespace MyAPI.Controllers
         }
 
         // GET api/employee?pageNumber=1&pageSize=20
-        [HttpGet]
+       // [Authorize]
+        [HttpGet]        
         public async Task<IActionResult> GetAll([FromQuery] PaginationFilter filter)
         {
             var result = await _service.GetEmployeesAsync(filter);
             return Ok(result);
         }
 
-
+        [HttpGet("title") ]   
+        public async Task<IActionResult> GetTitleView(string id)
+        {
+            var result = await _service.GetTitleViewAsync(id);
+            if (result == null) return NotFound(new { message = "找不到Title ID" });
+            return Ok(result);
+        }
+     
+        
     }
+
+
 }
